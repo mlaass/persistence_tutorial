@@ -221,6 +221,14 @@ class IntroScene(Scene):
         self.play(Write(x))
         self.wait(2)
 
+class FormulaScene(Scene):
+    def construct(self):
+        set_background(self)
+
+        formula = Text(r"$\frac{3}{4}$", color="black")
+        self.play(Write(formula))
+        self.wait(3)
+
 ls = wkt.loads(lss)
 sz = 6
 graph_timing=0.1
@@ -622,8 +630,8 @@ class SequencePlotGrowComponents(GraphScene, MovingCameraScene):
                     #if max is already used
                     if(used[x] != -1):   
                         
-                        status = set_status(f"iteration: {it}\ncurrent component: {current_i}\nmax is used -> merge", status)                     
                         #MERGE COMPONENTS
+                        status = set_status(f"iteration: {it}\ncurrent component: {current_i}\nmax is used -> merge", status)                     
                         c2 = comps[used[x]]
                         m1 = c1["min"]
                         m2 = c2["min"]
@@ -653,8 +661,8 @@ class SequencePlotGrowComponents(GraphScene, MovingCameraScene):
                         c1["max"] = x
                         c1["done"] = True
 
-                        self.remove(c1["v"])
-                        self.remove(c2["v"])
+                        self.play(FadeOut(c1["v"]))
+                        self.play(FadeOut(c2["v"]))
                         c1["v"] = make_v(c1)
                         c2["v"] = make_v(c2)
                         self.play(Write(c1["v"]))

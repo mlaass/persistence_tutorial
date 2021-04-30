@@ -1,6 +1,6 @@
 # script
 
-Welcome, in this tutorial we will bee looking at the persistence algorithm for trajectory simplification.
+Hello and welcome, in this introduction. We will bee looking at the persistence algorithm for trajectory simplification.
 The Basic algorithm was introduced in 2014 in the paper "Persistence based online signal and trajectory simplification for mobile devices"
 
 I had the privilege to implement this algorithm myself in 2016 and find an improvement, which we published in 2021 in the paper "Improving persistence based trajectory simplification".
