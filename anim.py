@@ -97,7 +97,7 @@ def extrema(curve):
                 last_max = x
 
     #add end, its either min or max
-    if(curve[res_min[-1]] > curve[res_max[-1]]):
+    if(len(res_min) > len(res_max)):
         res_max.append(len(curve)-1)
     else:
         res_min.append(len(curve)-1)
@@ -219,7 +219,62 @@ class IntroScene(Scene):
         set_background(self)
         self.play(Write(tum))
         self.play(Write(x))
-        self.wait(2)
+        self.wait(1)
+        self.play(FadeOut(x))
+        self.wait(1)
+
+class Titles(Scene):
+    def construct(self):
+        titles = [
+            {"txt": "Trajectory Simplification",},
+            {"txt": "Douglas Peucker",},
+            {"txt": "The Persistence Algorithm",},
+            {"txt": "Cuvature",},
+            {"txt": "Sweepline Visualisation",},
+            {"txt": "Local Extrema",},
+            {"txt": "Component Growth",},
+            {"txt": "Beta Pruning",},
+            {"txt": "Segment Distance Simplification",},
+            {"txt": "Multi Resolution Simplification",},
+        ]
+        set_background(self)
+        x = VGroup()
+        self.add(x)
+        for t in titles:
+            self.play(FadeOut(x))
+            self.wait(1)
+            x = Text(t["txt"], color="black")
+            self.play(Write(x))
+            self.wait(3)
+
+        self.play(FadeOut(x))
+        self.wait(1)
+
+class TopTitle(Scene):
+    def construct(self):
+        titles = [
+            {
+                "title": "Improving Persistence based\nTrajectory Simplification",
+                "subtitle": "Moritz Laass, Marie Kiermeier, Martin Werner",
+            },
+        ]
+        set_background(self)
+        x = VGroup()
+        self.add(x)
+        for t in titles:
+            self.play(FadeOut(x))
+            self.wait(1)
+            txt = Text(t["title"], color="black").scale(1.5)
+            sub = Text(t["subtitle"], color="black").next_to(txt, direction=DOWN, aligned_edge=DOWN, buff=1)
+            x = VGroup(txt,sub)
+            self.play(Write(txt), run_time=2)
+            self.play(Write(sub), )
+            self.wait(3)
+
+        self.play(FadeOut(x))
+        self.wait(1)
+
+
 
 class FormulaScene(Scene):
     def construct(self):
@@ -467,7 +522,9 @@ class SequencePlotSweepline(GraphScene):
     
 class SequencePlotGrowComponents(GraphScene, MovingCameraScene):
     def __init__(self, **kwargs):
-        self.cutoff= int(32)
+        self.cutoff= int(16)
+        self.bar_off = -3.5
+        self.bar_step = 0.25
 
         GraphScene.__init__(
             self,
@@ -490,7 +547,7 @@ class SequencePlotGrowComponents(GraphScene, MovingCameraScene):
         self.camera.frame.save_state()
         #self.play(Restore(self.camera.frame.scale(0.5)))
         set_background(self)
-        data = traj_to_curve(ls.coords[:self.cutoff][::-1])
+        data = traj_to_curve(ls.coords[::-1][:self.cutoff])
         minima, maxima = extrema(data)
 
         print(data)
@@ -512,10 +569,10 @@ class SequencePlotGrowComponents(GraphScene, MovingCameraScene):
             e=self.coords_to_point(i,dat)
 
 
-            #dot = Dot(color="darkgray").move_to(e)
+            dot = Dot(color="darkgray").move_to(e)
             line = Line(start=s, end=e, color="lightgray")
-            #x = VGroup(dot, line)
-            self.add(line)
+            x = VGroup(dot, line)
+            self.add(x)
         
         for i in minima:
             e=self.coords_to_point(i,data[i])
@@ -561,7 +618,7 @@ class SequencePlotGrowComponents(GraphScene, MovingCameraScene):
         #TODO merge bars
         def add_bar(c):
             bars.append(c)
-            x= -3.5+0.25*len(bars)
+            x= self.bar_off+self.bar_step*len(bars)
             
             l1 = Line(start= self.coords_to_point(c["min"],curve[c["min"]]),end= self.coords_to_point(c["max"],curve[c["max"]]), color="black")
             l2 = Line(start= self.coords_to_point(x,curve[c["min"]]),end= self.coords_to_point(x,curve[c["max"]]), color="black")
@@ -676,6 +733,31 @@ class SequencePlotGrowComponents(GraphScene, MovingCameraScene):
 
         # self.play(Restore(self.camera.frame))
         self.wait(3)
+
+
+
+class SequencePlotGrowComponentsFull(SequencePlotGrowComponents):
+    def __init__(self, **kwargs):
+        self.cutoff= int(130)
+
+        self.bar_off = -30
+        self.bar_step = 0.65
+
+        GraphScene.__init__(
+            self,
+            x_min=-1,
+            x_max=self.cutoff,
+            y_min=int(MIN_Y/15)*15,
+            y_max=MAX_Y,
+            graph_origin = [-5,0,0],
+            x_tick_frequency=1,
+            y_tick_frequency=15,
+            y_labeled_nums=range(int(MIN_Y/15)*15,int(MAX_Y),15),
+            y_axis_label=r"$\alpha$",
+            x_axis_label=r"$i$",
+            include_tip=True,
+            **kwargs
+        )
 
 
 

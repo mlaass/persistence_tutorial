@@ -1,0 +1,110 @@
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'simplification.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{732.21429186bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.33333332)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{simplification.pdf}}%
+    \put(0.058125,0.055){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}−200\end{tabular}}}}%
+    \put(0.11517361,0.055){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.1527199,0.055){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}200\end{tabular}}}}%
+    \put(0.1979861,0.055){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}400\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{simplification.pdf}}%
+    \put(0.04833333,0.08008102){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}800\end{tabular}}}}}%
+    \put(0.04833333,0.15030092){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1200\end{tabular}}}}}%
+    \put(0.04833333,0.22437499){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1600\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{simplification.pdf}}%
+    \put(0.07019676,0.2933449){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{O}\textbf{r}\textbf{i}\textbf{g}\textbf{i}\textbf{n}\textbf{a}\textbf{l}\textbf{ }\textbf{T}\textbf{r}\textbf{a}\textbf{j}\textbf{e}\textbf{c}\textbf{t}\textbf{o}\textbf{r}\textbf{y}\end{tabular}}}}%
+    \put(0.11986111,0.02166667){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}X−Axis\end{tabular}}}}%
+    \put(0.015,0.15319444){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Y−Axis\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{simplification.pdf}}%
+    \put(0.30812499,0.055){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}−200\end{tabular}}}}%
+    \put(0.3651736,0.055){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.40271989,0.055){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}200\end{tabular}}}}%
+    \put(0.44798609,0.055){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}400\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{simplification.pdf}}%
+    \put(0.29833332,0.08008102){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}800\end{tabular}}}}}%
+    \put(0.29833332,0.15030092){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1200\end{tabular}}}}}%
+    \put(0.29833332,0.22437499){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1600\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{simplification.pdf}}%
+    \put(0.32633101,0.2933449){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{D}\textbf{o}\textbf{u}\textbf{g}\textbf{l}\textbf{a}\textbf{s}\textbf{ }\textbf{P}\textbf{e}\textbf{u}\textbf{c}\textbf{k}\textbf{e}\textbf{r}\end{tabular}}}}%
+    \put(0.3698611,0.02166667){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}X−Axis\end{tabular}}}}%
+    \put(0.26499999,0.15319444){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Y−Axis\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{simplification.pdf}}%
+    \put(0.55812498,0.055){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}−200\end{tabular}}}}%
+    \put(0.61517359,0.055){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.65271988,0.055){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}200\end{tabular}}}}%
+    \put(0.69798608,0.055){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}400\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{simplification.pdf}}%
+    \put(0.54833331,0.08008102){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}800\end{tabular}}}}}%
+    \put(0.54833331,0.15030092){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1200\end{tabular}}}}}%
+    \put(0.54833331,0.22437499){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1600\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{simplification.pdf}}%
+    \put(0.57629627,0.2933449){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{P}\textbf{e}\textbf{r}\textbf{s}\textbf{i}\textbf{s}\textbf{t}\textbf{e}\textbf{n}\textbf{c}\textbf{e}\textbf{ }\textbf{M}\textbf{R}\textbf{S}\end{tabular}}}}%
+    \put(0.61986109,0.02166667){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}X−Axis\end{tabular}}}}%
+    \put(0.51499998,0.15319444){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Y−Axis\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{simplification.pdf}}%
+    \put(0.80812501,0.055){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}−200\end{tabular}}}}%
+    \put(0.86517362,0.055){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.90271991,0.055){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}200\end{tabular}}}}%
+    \put(0.94798611,0.055){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}400\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{simplification.pdf}}%
+    \put(0.79833334,0.08008102){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}800\end{tabular}}}}}%
+    \put(0.79833334,0.15030092){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1200\end{tabular}}}}}%
+    \put(0.79833334,0.22437499){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1600\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{simplification.pdf}}%
+    \put(0.82763889,0.2933449){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{P}\textbf{e}\textbf{r}\textbf{s}\textbf{i}\textbf{s}\textbf{t}\textbf{e}\textbf{n}\textbf{c}\textbf{e}\textbf{ }\textbf{S}\textbf{D}\textbf{S}\end{tabular}}}}%
+    \put(0.86986112,0.02166667){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}X−Axis\end{tabular}}}}%
+    \put(0.76500001,0.15319444){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Y−Axis\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{simplification.pdf}}%
+  \end{picture}%
+\endgroup%
