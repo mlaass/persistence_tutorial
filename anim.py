@@ -223,6 +223,15 @@ class IntroScene(Scene):
         self.play(FadeOut(x))
         self.wait(1)
 
+class HausdorffScene(Scene):
+    def construct(self):
+        slide = SVGMobject("./gfx/.pdf.svg",color="black")
+        #tum.scale_in_place(1.5)
+        
+        set_background(self)
+        self.play(Write(slide))
+        self.wait(1)
+
 class Titles(Scene):
     def construct(self):
         titles = [
@@ -494,7 +503,7 @@ class SequencePlotSweepline(GraphScene):
         #     marker = DashedLine(start=self.coords_to_point(b[0], mx), end=self.coords_to_point(b[1], mx), color="lightgray")
         #     self.add((bar))
         #     self.add((marker))
-        steptime = 0.1
+        steptime = 0.3
         for i in steps:
             l2 = Line(start=self.coords_to_point(-5, i), end=self.coords_to_point(len(data)+5, i), color="black", stroke_width=7, stroke_opacity=0.5)
 
@@ -518,7 +527,7 @@ class SequencePlotSweepline(GraphScene):
             vb = vb2
         self.play(FadeOut(l1), run_time=2)
         
-        self.wait(3)
+        self.wait(5)
     
 class SequencePlotGrowComponents(GraphScene, MovingCameraScene):
     def __init__(self, **kwargs):

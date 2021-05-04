@@ -40,7 +40,7 @@ This is the input for the actual persistence algorithm, which can be visualized 
 
 ### sweepline
 
-The line sweeps from the bottom up and we start a new component at each minimum when components meet at a maximum they merge into the larger one. At the end we have a set of components, the so called "barcode" that connect minima and maxima. The smaller bars represent less important features which we can use to simplify in the next step.
+The line sweeps from the bottom up and we start a new component at each minimum. when components meet at a maximum they merge into the larger one. At the end we have a set of components, the so called "barcode" that connect minima and maxima. The smaller bars represent less important features which we can use to simplify in the next step.
 
 But before we do this, let's look at the actual implementation of the algorithm a bit closer.
 
@@ -50,11 +50,11 @@ But before we do this, let's look at the actual implementation of the algorithm 
 The actual implementation starts by calculating the local extrema. We do this by comparing each value to the directly neighbouring values  and if the neighbours are both smaller it is a local maximum and if they are both bigger it is a local minimum.
 
 ### ComponentGrowth
-In the actual implementation we know that we have a component foreach pair of minima and maxima, so we set up a component for each minimum a component is comprised of a left and right index aswell as a minimum and maximum index and a binary flag indicating if it is done or not.
+In the actual implementation we know that we have a component foreach pair of minima and maxima, so we set up a component for each minimum. a component is comprised of a left and right index aswell as a minimum and maximum index and a binary flag indicating if it is done or not.
 
 We then have a loop that goes through all acctive components growing them on the left or right, choosing the side with the lower value. Once it reaches a maximum it check if the maximum is already used by another component.
 
-If it is not taken the component is marked as done and the maximum is marked as used.
+If it is not used the component is marked as done and the maximum is marked as used.
 
 If the maximum is already used both components are merged and the component with the lower minimum stays active while the other one is flagged as done.
 
@@ -70,7 +70,8 @@ We can see that through beta pruning we can significantly reduce our original tr
 
 
 ### SDS technique
-Our suggestion to remove such noise is segment distance simplification, is to remove all points that are closer to a given epsilon value to the line between their neighbouring points.
+Our suggestion to remove such noise is segment distance simplification.
+Wo do this by interating over all points comparing a given epsilon value to the points distance with the line between the neighbouring points.
  This can be done in several steps each time increasing the epsilon value.
 
  [TODO animate SDS]
